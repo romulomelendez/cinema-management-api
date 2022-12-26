@@ -1,9 +1,9 @@
-import { Router, Request, Response } from "express"
+import { Request, Response, Router } from "express"
 
 const router = Router()
 
-router.get('/', (req: Request, res: Response) => {
-    res.status(200).json('Hello World!')
+router.get("/", (req: Request, res: Response) => {
+	res.status(200).json("Hello World!")
 })
 
 export { router }
