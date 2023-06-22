@@ -111,10 +111,10 @@
   resolved "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-4.8.0-61.d6e67a83f971b175a593ccc12e15c4a757f93ffe.tgz"
   integrity sha512-MHSOSexomRMom8QN4t7bu87wPPD+pa+hW9+71JnVcF3DqyyO/ycCLhRL1we3EojRpZxKvuyGho2REQsMCvxcJw==
 
-"@prisma/engines@4.8.0":
-  version "4.8.0"
-  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-4.8.0.tgz"
-  integrity sha512-A1Asn2rxZMlLAj1HTyfaCv0VQrLUv034jVay05QlqZg1qiHPeA3/pGTfNMijbsMYCsGVxfWEJuaZZuNxXGMCrA==
+"@prisma/engines@4.16.0":
+  version "4.16.0"
+  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-4.16.0.tgz"
+  integrity sha512-M6XoMRXnqL0rqZGQS8ZpNiHYG4G1fKBdoqW/oBtHnr1in5UYgerZqal3CXchmd6OBD/770PE9dtjQuqcilZJUA==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
@@ -1218,12 +1218,12 @@ prettier@2.8.1:
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.1.tgz"
   integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
 
-prisma@*, prisma@^4.8.0:
-  version "4.8.0"
-  resolved "https://registry.npmjs.org/prisma/-/prisma-4.8.0.tgz"
-  integrity sha512-DWIhxvxt8f4h6MDd35mz7BJff+fu7HItW3WPDIEpCR3RzcOWyiHBbLQW5/DOgmf+pRLTjwXQob7kuTZVYUAw5w==
+prisma@*, prisma@^4.16.0:
+  version "4.16.0"
+  resolved "https://registry.npmjs.org/prisma/-/prisma-4.16.0.tgz"
+  integrity sha512-kSCwbTm3LCephyGfZMJYqBXpPJXdJStg5xwfzeFmR5C05zfkOURK9pQpJF6uUQvFWm3lI9ZMSNkObmFkAPnB+g==
   dependencies:
-    "@prisma/engines" "4.8.0"
+    "@prisma/engines" "4.16.0"
 
 proxy-addr@~2.0.7:
   version "2.0.7"
