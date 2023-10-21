@@ -23,12 +23,14 @@ model Movie {
 
 model MovieRoom {
     id       String   @id @default(uuid())
+    roomNumber Int
     capacity Int
     Ticket   Ticket[]
 }
 
 model Ticket {
     id       String    @id @default(uuid())
+	roomNumber Int
     price    Float
     id_movie String
     movie    Movie     @relation(fields: [id_movie], references: [id])
