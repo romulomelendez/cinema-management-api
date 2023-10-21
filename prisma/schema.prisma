@@ -18,22 +18,32 @@ model Movie {
     duration Int
     director String
     studio   String
-    Ticket   Ticket[]
+    session  Session?
 }
 
-model MovieRoom {
-    id       String   @id @default(uuid())
+model Session {
+    id         String   @id @default(uuid())
+    movie_time DateTime
+    movie      Movie    @relation(fields: [movieId], references: [id])
+    movieId    String   @unique
+    room       Room     @relation(fields: [roomId], references: [id])
+    roomId     String   @unique
+
+    ticket Ticket?
+}
+
+model Room {
+    id         String   @id @default(uuid())
     roomNumber Int
-    capacity Int
-    Ticket   Ticket[]
+    capacity   Int
+    free_seats Int
+    session    Session?
 }
 
 model Ticket {
-    id       String    @id @default(uuid())
-	roomNumber Int
-    price    Float
-    id_movie String
-    movie    Movie     @relation(fields: [id_movie], references: [id])
-    id_room  String
-    room     MovieRoom @relation(fields: [id_room], references: [id])
+    id        String  @id @default(uuid())
+    price     Float
+    seat      String  @unique
+    session   Session @relation(fields: [sessionId], references: [id])
+    sessionId String  @unique
 }
