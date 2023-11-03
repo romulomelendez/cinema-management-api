@@ -1,9 +1,9 @@
-import { Request, Response, Router } from "express"
+import { Router } from "express"
+
+import ClientController from './controllers/ClientController'
 
 const router = Router()
 
-router.get("/", (req: Request, res: Response) => {
-	res.status(200).json("Hello World!")
-})
+router.get("/", ClientController.create)
 
 export { router }
