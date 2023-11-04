@@ -2,8 +2,17 @@ import { Request, Response } from "express"
 
 class ClientController {
 
-	create = (req: Request, res: Response): Response<string> => {
-		return res.status(200).json("Hello World!")
+	buyTickets = (req: Request, res: Response): Response<string> => {
+
+		try {
+
+			// const { sessionId, price, seats } = req.body
+
+			return res.status(200).json("OK")
+
+		} catch (error) {
+			throw new Error(error)
+		}
 	}
 }
 
